@@ -4,7 +4,7 @@ var array3 = [1,"hello",true,];
 var array4 = [[1,{a:1,b:2},[2,{a:3,b:4}]]];
 
 var array5 = [1,,3];
- 
+
 var array6 = new Array(10);
 var array7 = new Array(5,4,3,2,1,"hello","test");
 

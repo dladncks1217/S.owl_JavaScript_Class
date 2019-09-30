@@ -5,7 +5,7 @@ var doubleQuoteStr = "더블 쿼트 문자열";
 var BooleanType = true;
 var empty;
 var nullVar = null;
- 
+
 console.log(typeof(intNum));
 console.log(typeof(doubleNum));
 console.log(typeof(singleQuoteStr));

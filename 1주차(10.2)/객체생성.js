@@ -9,7 +9,7 @@ var point1 = {  //다른 객체의 프로퍼티 접근
 };
 var book = {
   "main title": "JavaScript", //
-  "sub-title": "subtitleJ", 
+  "sub-title": "subtitleJ",
   "author":{
     firstname:"Lim",
     surname:"woochan",
