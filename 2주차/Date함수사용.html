@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Date</title>
+  </head>
+  <body onload="time_output()">
+    <div id="time">
+
+    </div>
+    <script type="text/javascript">
+        function time_output(){
+        var times = document.getElementById('time');
+        var now = new Date();
+        var year = now.getFullYear();
+        var month = now.getMonth();
+        var date = now.getDate();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        times.innerHTML = year+"년 "+month+"월 "+date+"일 "+hour+"시 "+minute+"분 "+second+"초";
+        setTimeout(function(){
+             time_output();
+             console.log(year+"년 "+month+"월 "+date+"일 "+hour+"시 "+minute+"분 "+second+"초");
+           },1000);
+        };
+
+    </script>
+  </body>
+</html>

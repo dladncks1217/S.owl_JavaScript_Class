@@ -5,8 +5,14 @@ domid.addEventListener('click',function(){
   }else{
     domid.value = "버튼클릭함!"
   }
-
 });
+domid.addEventListener('dblclick',function(){
+  if(domid.value == "버튼 더블클릭함!"){
+    domid.value = "버튼";
+  }else{
+    domid.value = "버튼 더블클릭함!"
+  }
+})
 var domclass = document.getElementsByClassName('buttonclass')[0];
 
 domclass.addEventListener('mouseover',function(){
