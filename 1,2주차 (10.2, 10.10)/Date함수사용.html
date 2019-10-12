@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>Date</title>
   </head>
-  <body onload="time_output()">
+  <body >
     <div id="time">
 
     </div>
     <script type="text/javascript">
+
+      window.onload = time_output();
         function time_output(){
         var times = document.getElementById('time');
         var now = new Date();
