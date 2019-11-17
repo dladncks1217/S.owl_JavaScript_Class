@@ -63,7 +63,6 @@
   - 이전 내용 복습(prototype, this)
 ## 8주차 (11/21)
   - 이전 내용 복습(prototype, this)
-  - 암묵적 프로토타입 링크(implict prototype link)
   - call(), apply()
   - this의 한계를 극복하기 위한 바닐라 자바스크립트 예제(that 생성하여 사용하는 내용)
   - 디폴트 프로토타입이란?
