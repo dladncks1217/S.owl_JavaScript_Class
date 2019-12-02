@@ -8,11 +8,15 @@ const app = express();
 
 app.set('views',path.join(__dirname,'views')); // views관련 파일들은 기본적으로 경로를 'views' 라는 폴더에서 찾기 시작합니다.
 app.set('view engine', 'ejs');  // view engine 은 템플릿 엔진 ejs를 사용합니다.
-app.set('port',process.env.PORT||8009); // 포트번호 지정
+
 
 
 require('dotenv').config(); // dotenv파일을 가져옵니다.
 app.use(logger('dev'));  // npm 에서 받아온 morgan 모듈을 app.use를 통해 사용합니다.
+app.use(express.static(path.join(__dirname,'public'))); // 정적 파일은 기본적으로 모두 'public'폴더를 기본 경로로 찾기 시작합니다.
+app.use(express.json()); 
+app.use(express.urlencoded({extended:false})); 
+
 
 app.use('/',indexRouter); // '/' 경로로 이동했을 경우 정의된 indexRouter을 불러옵니다. 즉, ./routes/index.js 의 코드가 실행됩니다.
 
@@ -28,6 +32,6 @@ app.use((err,req,res)=>{  // http 500 에러처리 미들웨어입니다.
     res.status(err.status||500);
 });
 
-app.listen(app.get('port'),()=>{ // 포트번호 지정입니다.
-    console.log(`${app.get('port')}번 포트에서 서버 대기중입니다!`);
+app.listen(8011,()=>{ // 포트번호 지정입니다.
+    console.log('8011번 포트에서 서버 대기중입니다!');
 });
