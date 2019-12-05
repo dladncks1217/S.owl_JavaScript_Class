@@ -88,9 +88,10 @@
         -  비구조화할당
         -  arrowFunction
         -  Promise
+        -  async, await
         -  Template 리터럴
         -  등등..
   - 서버와 클라이언트란?
   - 미들웨어란?
   - npm이란?
-  - node.js express프레임워크로 간단하게 웹페이지 띄워보기
+  - node.js express프레임워크 사용법
